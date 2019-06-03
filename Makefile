@@ -11,10 +11,10 @@ fmt:
 # Runs tests in short mode, without database adapters
 .PHONY: quicktest
 quicktest:
-		go test -short all
+		go test -short ./...
 
 
 # Runs tests in short mode, without database adapters
 .PHONY: test
 test:
-		go test all
+		go test ./...
